@@ -31,3 +31,9 @@ les deux fichiers.
 - devDependencies : les dépendances utilisées uniquement pendant le développement,
   par exemple pour compiler (TypeScript), vérifier le code (ESLint) ou le tester (Jest).
 ```
+
+## Question 5:
+
+```
+On définit les URL des API comme '/api/v1/sysinfo' en basant sur le path standard: '/api/v./.' car si on developpe une outil ou un système, on pourra changer les URL des APIS et passera aux nouveaux versions des apis, par exemple si on fait une deuxième version de get pour les informations de systèmes on peut le developper sans perdre le code de la première version, ce que peut mettre notre service en état DOWN si on ferra pas des différents versions quand on veux mise à jour nos API. Donc les utilisateurs peuvent utiliser toujours nos services.
+```
