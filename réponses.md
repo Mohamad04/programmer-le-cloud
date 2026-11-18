@@ -37,3 +37,14 @@ les deux fichiers.
 ```
 On définit les URL des API comme '/api/v1/sysinfo' en basant sur le path standard: '/api/v./.' car si on developpe une outil ou un système, on pourra changer les URL des APIS et passera aux nouveaux versions des apis, par exemple si on fait une deuxième version de get pour les informations de systèmes on peut le developper sans perdre le code de la première version, ce que peut mettre notre service en état DOWN si on ferra pas des différents versions quand on veux mise à jour nos API. Donc les utilisateurs peuvent utiliser toujours nos services.
 ```
+
+
+## Question 6
+
+```
+On écrit un jeu de tests avec Jest pour vérifier automatiquement que notre application fonctionne correctement et respecte les comportements attendus, sans avoir besoin de la déployer en production.
+
+Ces tests permettent de vérifier les réponses HTTP, les données retournées et la gestion des erreurs. Ils facilitent la détection des bugs et des régressions après une modification du code.
+
+Ainsi, ils réduisent le besoin de tests manuels répétitifs, améliorent la fiabilité de l'application et facilitent sa maintenance.
+```

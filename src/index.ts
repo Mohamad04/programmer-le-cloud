@@ -48,7 +48,7 @@ async function getSystemInformation(): Promise<ISystemInformation> {
   };
 }
 
-const server = http.createServer();
+export const server = http.createServer();
 
 server.on('request', async (request, res) => {
   if (request.url === '/api/v1/sysinfo' && request.method === 'GET') {
@@ -76,6 +76,8 @@ server.on('request', async (request, res) => {
   }
 });
 
-server.listen(8000, () => {
-  console.log('Server listening on http://localhost:8000');
-});
+if (require.main === module) {
+  server.listen(8000, () => {
+    console.log('Server listening on http://localhost:8000');
+  });
+}
